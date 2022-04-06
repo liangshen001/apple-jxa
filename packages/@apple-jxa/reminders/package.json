@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "liangshen001 <wangliang520wl@hotmail.com>",
-  "homepage": "",
   "license": "ISC",
   "main": "lib/reminders.js",
   "directories": {
@@ -21,5 +20,21 @@
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/liangshen001/apple-jxa/issues"
+  },
+  "homepage": "https://github.com/liangshen001/apple-jxa/tree/master/packages/@apple-jxa/reminders",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liangshen001/apple-jxa.git"
+  },
+  "keywords": [
+    "jxa",
+    "osa",
+    "automation",
+    "apple",
+    "reminders",
+    "node"
+  ]
 }

@@ -3,7 +3,6 @@
   "version": "0.0.2",
   "description": "> TODO: description",
   "author": "liangshen001 <wangliang520wl@hotmail.com>",
-  "homepage": "",
   "license": "ISC",
   "main": "lib/google-chrome.js",
   "types": "lib/google-chrome.d.ts",
@@ -24,5 +23,21 @@
   "devDependencies": {
     "@apple-jxa/cli": "0.0.1",
     "@apple-jxa/types": "0.0.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/liangshen001/apple-jxa/issues"
+  },
+  "homepage": "https://github.com/liangshen001/apple-jxa/tree/master/packages/@apple-jxa/google-chrome",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liangshen001/apple-jxa.git"
+  },
+  "keywords": [
+    "jxa",
+    "osa",
+    "automation",
+    "apple",
+    "google-chrome",
+    "sdef"
+  ]
 }

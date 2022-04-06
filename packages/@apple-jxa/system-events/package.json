@@ -3,7 +3,6 @@
   "version": "0.0.2",
   "description": "> TODO: description",
   "author": "liangshen001 <wangliang520wl@hotmail.com>",
-  "homepage": "",
   "license": "ISC",
   "main": "lib/system-events.js",
   "types": "lib/system-events.d.ts",
@@ -20,5 +19,21 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
     "publish:sdk-bridge:patch": "npm version patch && npm config set scope apple-jxa && npm publish --access public ."
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/liangshen001/apple-jxa/issues"
+  },
+  "homepage": "https://github.com/liangshen001/apple-jxa/tree/master/packages/@apple-jxa/system-events",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liangshen001/apple-jxa.git"
+  },
+  "keywords": [
+    "jxa",
+    "osa",
+    "automation",
+    "apple",
+    "system-events",
+    "sdef"
+  ]
 }
