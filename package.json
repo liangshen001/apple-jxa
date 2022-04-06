@@ -1,0 +1,20 @@
+{
+  "name": "apple-jxa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.7.0",
+    "@types/node": "^17.0.23",
+    "lerna": "^4.0.0",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "xml-js": "^1.6.11"
+  }
+}

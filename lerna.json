@@ -1,0 +1,7 @@
+{
+  "packages": [
+    "packages/*",
+    "packages/@apple-jxa/*"
+  ],
+  "version": "0.0.0"
+}
