@@ -234,11 +234,11 @@ export function build(application: string, options: {output: string}) {
                 if (suite.classExtensions.filter(c => !c.description?.includes('(NOT AVAILABLE YET)')).every(i => i.extends !== 'application') &&
                     suite.classes.filter(c => !c.description?.includes('(NOT AVAILABLE YET)')).every(i => i.name !== 'application')) {
                     let extendsClass;
-                    if (suite.name === 'Standard Suite') {
+                    // if (suite.name === 'Standard Suite') {
                         extendsClass = ['JXAApplication']
-                    } else {
-                        extendsClass = [`JXASpecifier<'application'>`]
-                    }
+                    // } else {
+                    //     extendsClass = [`JXASpecifier<'application'>`]
+                    // }
                     text += getClassText('Application', '', extendsClass, [], [], suite.commands, suite.classes)
                     text += indentation()
                 }

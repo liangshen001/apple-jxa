@@ -235,12 +235,11 @@ function build(application, options) {
                 if (suite.classExtensions.filter(function (c) { var _a; return !((_a = c.description) === null || _a === void 0 ? void 0 : _a.includes('(NOT AVAILABLE YET)')); }).every(function (i) { return i.extends !== 'application'; }) &&
                     suite.classes.filter(function (c) { var _a; return !((_a = c.description) === null || _a === void 0 ? void 0 : _a.includes('(NOT AVAILABLE YET)')); }).every(function (i) { return i.name !== 'application'; })) {
                     var extendsClass = void 0;
-                    if (suite.name === 'Standard Suite') {
-                        extendsClass = ['JXAApplication'];
-                    }
-                    else {
-                        extendsClass = ["JXASpecifier<'application'>"];
-                    }
+                    // if (suite.name === 'Standard Suite') {
+                    extendsClass = ['JXAApplication'];
+                    // } else {
+                    //     extendsClass = [`JXASpecifier<'application'>`]
+                    // }
                     text += getClassText('Application', '', extendsClass, [], [], suite.commands, suite.classes);
                     text += (0, utils_1.indentation)();
                 }
