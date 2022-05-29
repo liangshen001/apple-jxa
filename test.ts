@@ -1,5 +1,8 @@
 import 'packages/@apple-jxa/types'
 
+const a = Application.currentApplication();
+a.includeStandardAdditions = true;
+a.displayDialog('')
 
 const app = Application('Google Chrome')
 app.includeStandardAdditions = true

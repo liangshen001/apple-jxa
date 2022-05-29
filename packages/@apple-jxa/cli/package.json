@@ -1,6 +1,6 @@
 {
   "name": "@apple-jxa/cli",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "> TODO: description",
   "author": "liangshen001 <wangliang520wl@hotmail.com>",
   "license": "ISC",
@@ -11,7 +11,8 @@
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "lib",
+    "dist"
   ],
   "publishConfig": {
     "access": "public"
@@ -21,13 +22,12 @@
     "build": "tsc",
     "publish:sdk-bridge:patch": "npm version patch && npm config set scope apple-jxa && npm publish --access public ."
   },
-  "devDependencies": {
+  "dependencies": {
     "@apple-jxa/types": "file:./../types",
     "@types/node": "^17.0.23",
-    "typescript": "^4.6.2"
-  },
-  "dependencies": {
+    "typescript": "^4.6.2",
     "commander": "^9.1.0",
+    "camelcase": "^6.3.0",
     "xml-js": "^1.6.11"
   },
   "bin": {
