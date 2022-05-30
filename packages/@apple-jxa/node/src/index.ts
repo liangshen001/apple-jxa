@@ -5,7 +5,7 @@ export function runJXACode<R>(jxaCode: string): Promise<R> {
     return executeInOsa(jxaCode, []);
 }
 
-export function run<R, U extends any[]>(jxaCodeFunction: (...args: U) => void, ...args: U): Promise<R> {
+export function run<R, U extends any[]>(jxaCodeFunction: (...args: U) => R, ...args: U): Promise<R> {
     const code = `
 ObjC.import('stdlib');
 var args = JSON.parse($.getenv('OSA_ARGS'));

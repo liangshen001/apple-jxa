@@ -1,7 +1,7 @@
 
-import {Properties} from "../properties";
 import {JXASpecifier} from "./specifier";
 import {JXAType} from "./type";
+import {Properties} from "./properties";
 
 /**
  * whose或where中的查询条件
@@ -48,7 +48,6 @@ export type ElementArrays<E> = {
 
 export type MappingArrays<E, O = Properties<E>> = {
     [K in keyof O]: () => Array<O[K]>
-} & {
 }
 
 // export type ArraySpecifier<E> =
@@ -60,5 +59,5 @@ export type MappingArrays<E, O = Properties<E>> = {
  * N：元素类型的名字
  */
 export interface JXAArraySpecifier<E> extends FilteringArrays<E>, ElementArrays<E>, MappingArrays<E> {
-
+    (): E[];
 }
