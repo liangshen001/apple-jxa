@@ -82,10 +82,10 @@ export function build(application: string, options: {output: string}) {
                         const optional = command.directParameter.optional ? '?' : ''
                         let parameterType = ''
                         if (command.directParameter.type) {
-                            parameterType = jxaTypeMap.get(command.directParameter.type)!
+                            parameterType = originalTypeMap.get(command.directParameter.type) || jxaTypeMap.get(command.directParameter.type)!
                         } else {
                             parameterType = command.directParameter.types.map(i => {
-                                const type = jxaTypeMap.get(i.type)
+                                const type = originalTypeMap.get(command.directParameter.type) || jxaTypeMap.get(i.type)
                                 if (i.list) {
                                     return `JXAArraySpecifier<${type}>`
                                 }
