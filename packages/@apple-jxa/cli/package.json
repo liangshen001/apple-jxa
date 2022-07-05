@@ -1,52 +1,54 @@
 {
-  "name": "@apple-jxa/cli",
-  "version": "0.0.6",
-  "description": "> TODO: description",
-  "author": "liangshen001 <wangliang520wl@hotmail.com>",
-  "license": "ISC",
-  "main": "lib/cli.js",
-  "types": "lib/index.ts",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib",
-    "dist"
-  ],
-  "publishConfig": {
-    "access": "public"
-  },
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1",
-    "build": "tsc",
-    "publish:sdk-bridge:patch": "npm run build && npm version patch && npm config set scope apple-jxa && npm publish --access public ."
-  },
-  "dependencies": {
-    "@apple-jxa/types": "file:./../types",
-    "@types/node": "^17.0.23",
-    "typescript": "^4.6.2",
-    "commander": "^9.1.0",
-    "camelcase": "^6.3.0",
-    "xml-js": "^1.6.11"
-  },
-  "bin": {
-    "jxa": "dist/index.js"
-  },
-  "bugs": {
-    "url": "https://github.com/liangshen001/apple-jxa/issues"
-  },
-  "homepage": "https://github.com/liangshen001/apple-jxa/tree/master/packages/@apple-jxa/cli",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/liangshen001/apple-jxa.git"
-  },
-  "keywords": [
-    "jxa",
-    "osa",
-    "automation",
-    "apple",
-    "cli",
-    "sdef"
-  ]
+    "name": "@apple-jxa/cli",
+    "version": "0.0.6",
+    "description": "> TODO: description",
+    "author": "liangshen001 <wangliang520wl@hotmail.com>",
+    "license": "ISC",
+    "main": "lib/cli.js",
+    "types": "lib/index.ts",
+    "directories": {
+        "lib": "lib",
+        "test": "__tests__"
+    },
+    "files": [
+        "lib",
+        "dist"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "test": "echo \"Error: run tests from root\" && exit 1",
+        "build": "tsc",
+        "publish:sdk-bridge:patch": "npm run build && npm version patch && npm config set scope apple-jxa && npm publish --access public ."
+    },
+    "dependencies": {
+        "@types/node": "^17.0.23",
+        "commander": "^9.1.0",
+        "camelcase": "^6.3.0",
+        "xml-js": "^1.6.11"
+    },
+    "devDependencies": {
+        "typescript": "^4.6.2",
+        "@apple-jxa/types": "file:./../types"
+    },
+    "bin": {
+        "jxa": "dist/index.js"
+    },
+    "bugs": {
+        "url": "https://github.com/liangshen001/apple-jxa/issues"
+    },
+    "homepage": "https://github.com/liangshen001/apple-jxa/tree/master/packages/@apple-jxa/cli",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/liangshen001/apple-jxa.git"
+    },
+    "keywords": [
+        "jxa",
+        "osa",
+        "automation",
+        "apple",
+        "cli",
+        "sdef"
+    ]
 }
